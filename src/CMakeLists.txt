@@ -108,6 +108,11 @@ set(REGAMEMASTER_SRCS
 	"amxxmodule.cpp"
 )
 
+set(COMMON_SRCS
+	"common/info.cpp"
+	"common/stdc++compat.cpp"
+)
+
 set(PUBLIC_SRCS
 	"${PROJECT_SOURCE_DIR}/../include/cssdk/public/interface.cpp"
 )
@@ -140,6 +145,7 @@ target_compile_definitions(regamemaster PRIVATE
 
 target_sources(regamemaster PRIVATE
 	${REGAMEMASTER_SRCS}
+	${COMMON_SRCS}
 	${PUBLIC_SRCS}
 )
 
