@@ -28,6 +28,3 @@
 
 // AmxModX API
 #include "amxxmodule.h"
-
-#include "info.h"
-
