@@ -106,6 +106,7 @@ set(REGAMEMASTER_SRCS
 	"main.cpp"
 	"amxxmodule.cpp"
 	"meta_api.cpp"
+	"h_export.cpp"
 )
 
 set(COMMON_SRCS
