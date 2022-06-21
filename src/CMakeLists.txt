@@ -105,6 +105,7 @@ set(PROJECT_METAMOD_DIR
 set(REGAMEMASTER_SRCS
 	"main.cpp"
 	"amxxmodule.cpp"
+	"meta_api.cpp"
 )
 
 set(COMMON_SRCS
@@ -112,7 +113,7 @@ set(COMMON_SRCS
 )
 
 set(PUBLIC_SRCS
-	
+
 )
 
 add_library(regamemaster SHARED ${appversion.sh})
