@@ -33,9 +33,3 @@
 #include "info.h"
 #include "com_client.h"
 
-// natives
-#include "natives_hookchains.h"
-#include "natives_members.h"
-#include "natives_misc.h"
-#include "natives_common.h"
-#include "natives_helper.h"
