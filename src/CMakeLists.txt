@@ -109,8 +109,8 @@ set(REGAMEMASTER_SRCS
 )
 
 set(COMMON_SRCS
-	"common/info.cpp"
-	"common/stdc++compat.cpp"
+	"${PROJECT_SOURCE_DIR}/../common/info.cpp"
+	"${PROJECT_SOURCE_DIR}/../common/stdc++compat.cpp"
 )
 
 set(PUBLIC_SRCS
