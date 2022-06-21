@@ -22,7 +22,6 @@
 
 #include <pm_defs.h>
 #include <pm_movevars.h>
-#include <com_progdefs.h>
 
 // metamod SDK
 #include <meta_api.h>
@@ -31,5 +30,4 @@
 #include "amxxmodule.h"
 
 #include "info.h"
-#include "com_client.h"
 
