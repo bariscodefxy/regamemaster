@@ -83,23 +83,23 @@ if (NOT DEBUG)
 endif()
 
 set(PROJECT_SRC_DIR
-	"${PROJECT_SOURCE_DIR}"
-	"${PROJECT_SOURCE_DIR}/src"
-	"${PROJECT_SOURCE_DIR}/include"
-	"${PROJECT_SOURCE_DIR}/version"
+	"${PROJECT_SOURCE_DIR}/../"
+	"${PROJECT_SOURCE_DIR}/../src"
+	"${PROJECT_SOURCE_DIR}/../include"
+	"${PROJECT_SOURCE_DIR}/../version"
 )
 
 set(PROJECT_CSSDK_DIR
-	"${PROJECT_SOURCE_DIR}/include/cssdk/common"
-	"${PROJECT_SOURCE_DIR}/include/cssdk/dlls"
-	"${PROJECT_SOURCE_DIR}/include/cssdk/engine"
-	"${PROJECT_SOURCE_DIR}/include/cssdk/game_shared"
-	"${PROJECT_SOURCE_DIR}/include/cssdk/pm_shared"
-	"${PROJECT_SOURCE_DIR}/include/cssdk/public"
+	"${PROJECT_SOURCE_DIR}/../include/cssdk/common"
+	"${PROJECT_SOURCE_DIR}/../include/cssdk/dlls"
+	"${PROJECT_SOURCE_DIR}/../include/cssdk/engine"
+	"${PROJECT_SOURCE_DIR}/../include/cssdk/game_shared"
+	"${PROJECT_SOURCE_DIR}/../include/cssdk/pm_shared"
+	"${PROJECT_SOURCE_DIR}/../include/cssdk/public"
 )
 
 set(PROJECT_METAMOD_DIR
-	"${PROJECT_SOURCE_DIR}/include/metamod"
+	"${PROJECT_SOURCE_DIR}/../include/metamod"
 )
 
 set(REGAMEMASTER_SRCS
@@ -109,13 +109,13 @@ set(REGAMEMASTER_SRCS
 )
 
 set(PUBLIC_SRCS
-	"${PROJECT_SOURCE_DIR}/include/cssdk/public/interface.cpp"
+	"${PROJECT_SOURCE_DIR}/../include/cssdk/public/interface.cpp"
 )
 
 add_library(regamemaster SHARED ${appversion.sh})
 
 if (NOT TARGET appversion)
-	add_custom_target(appversion DEPENDS COMMAND "${PROJECT_SOURCE_DIR}/version/appversion.sh" "${PROJECT_SOURCE_DIR}/.." "regamemaster")
+	add_custom_target(appversion DEPENDS COMMAND "${PROJECT_SOURCE_DIR}/../version/appversion.sh" "${PROJECT_SOURCE_DIR}/.." "regamemaster")
 endif()
 
 add_dependencies(regamemaster appversion)
@@ -154,7 +154,7 @@ endif()
 
 set(LINK_FLAGS "${LINK_FLAGS} \
 	-Wl,-rpath,'$ORIGIN/.' \
-	-L${PROJECT_SOURCE_DIR}/lib/linux32")
+	-L${PROJECT_SOURCE_DIR}/../lib/linux32")
 
 set_target_properties(regamemaster PROPERTIES
 	OUTPUT_NAME regamemaster_amxx_i386
