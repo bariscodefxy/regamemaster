@@ -85,7 +85,6 @@ endif()
 set(PROJECT_SRC_DIR
 	"${PROJECT_SOURCE_DIR}/../"
 	"${PROJECT_SOURCE_DIR}/../src"
-	"${PROJECT_SOURCE_DIR}/../include"
 	"${PROJECT_SOURCE_DIR}/../common"
 	"${PROJECT_SOURCE_DIR}/../version"
 )
