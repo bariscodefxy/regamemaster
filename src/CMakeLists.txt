@@ -104,7 +104,6 @@ set(PROJECT_METAMOD_DIR
 
 set(REGAMEMASTER_SRCS
 	"main.cpp"
-	"amx_hook.cpp"
 	"amxxmodule.cpp"
 )
 
