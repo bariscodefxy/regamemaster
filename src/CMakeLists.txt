@@ -112,7 +112,7 @@ set(COMMON_SRCS
 )
 
 set(PUBLIC_SRCS
-	"${PROJECT_SOURCE_DIR}/../include/cssdk/public/interface.cpp"
+	
 )
 
 add_library(regamemaster SHARED ${appversion.sh})
